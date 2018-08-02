@@ -1,5 +1,7 @@
 FROM arm32v6/alpine:3.7
 
+COPY ./qemu-arm-static /usr/bin/qemu-arm-static
+
 RUN apk add --update nodejs
 RUN apk add --update openrc alpine-sdk make cmake gcc g++ gfortran python py-pip python-dev libpcap-dev
 
