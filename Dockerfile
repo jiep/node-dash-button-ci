@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM arm32v6/alpine:3.7
 
 RUN apk add --update nodejs
 RUN apk add --update openrc alpine-sdk make cmake gcc g++ gfortran python py-pip python-dev libpcap-dev
